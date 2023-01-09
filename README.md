@@ -6,7 +6,7 @@
 
 <p align="center">
   Todo list for <a href="https://www.theodinproject.com/">The Odin Project</a></br>
-  (this versions presente little changes its posibly that the image are not 100% accurate )
+  (this version presents some changes, it is possible that the image is not 100% accurate.)
 </p>
 
 ## Demo
