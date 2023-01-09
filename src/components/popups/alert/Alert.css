@@ -1,0 +1,31 @@
+.alert {
+    background-color: var(--moduleColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.alert p {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.alert button {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--detailsColor);
+    font-size: 14px;
+    font-weight: 800;
+    padding: 10px;
+    color: var(--moduleColor);
+    cursor: pointer;
+}
+
+.btnsParent {
+    display: flex;
+    gap: 20px;
+}

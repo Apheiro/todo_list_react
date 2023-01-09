@@ -1,0 +1,123 @@
+.Preview {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titlePreviewSection {
+    background-color: var(--detailsColor);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: var(--moduleColor);
+    font-size: 18px;
+    line-break: anywhere;
+    filter: var(--shadow);
+}
+
+.previewContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+.tasksPreviewContainer {
+    gap: 0;
+}
+
+.tasksPreviewContainer section {
+    margin-block: 5px;
+}
+
+.showSideBarBtnContainer {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.showSideBarBtnContainer button {
+    display: none;
+    position: fixed;
+    padding: 5px;
+    background-color: var(--detailsColor);
+    filter: var(--shadow);
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.showSideBarBtnContainer button svg {
+    color: var(--cardsColor);
+    width: 100%;
+    height: 100%;
+}
+
+.addTaskBtnContainer {
+    position: absolute;
+    width: 122px;
+    height: 41px;
+    right: 0;
+    bottom: 0;
+}
+
+.addTaskBtn {
+    background-color: var(--detailsColor);
+    filter: var(--shadow);
+    color: var(--cardsColor);
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.selectList {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.selectList h2 {
+    font-size: 40px;
+    text-shadow: -5px 5px 0px rgba(0, 0, 0, 0.411);
+}
+
+.selectList button {
+    background-color: var(--detailsColor);
+    color: var(--moduleColor);
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+    padding-inline: 10px;
+    cursor: pointer;
+    filter: var(--shadow);
+}
+
+/* .hidden {
+    display: none;
+} */
+@media (max-width:1000px) {
+    .showSideBarBtnContainer button {
+        display: inherit;
+    }
+}

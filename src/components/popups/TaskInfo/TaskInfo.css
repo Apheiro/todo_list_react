@@ -1,0 +1,105 @@
+.taskInfo {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--cardsColor);
+    display: flex;
+    flex-direction: column;
+    max-width: 625px;
+    width: 100%;
+    gap: 20px;
+}
+
+.taskInfo form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.taskinfoContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.taskInfoBtns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.taskInfoBtns h2 {
+    font-weight: 500;
+    color: var(--detailsColor);
+}
+
+.taskInfoName {
+    overflow-wrap: anywhere;
+    max-height: 180px;
+    font-size: 25px;
+    overflow: auto;
+}
+
+.taskInfoDescription {
+    overflow-wrap: anywhere;
+    max-height: 225px;
+    overflow: auto;
+}
+
+.closeTaskInfoBtn,
+.editTaskInfoBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--detailsColor);
+}
+
+.closeTaskInfoBtn svg,
+.editTaskInfoBtn svg {
+    width: 30px;
+    height: 30px;
+}
+
+.taskInfoEditForm {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.dateAndTitleContainerInputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.taskDateInputEditForm {
+    border: none;
+    height: 19px;
+    color: var(--fontColor);
+    background: none;
+}
+
+.taskTitleInputEditForm {
+    color: var(--fontColor);
+    background: transparent;
+    border: none;
+    resize: none;
+    max-height: 180px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.taskDescriptionInputEditForm {
+    color: var(--fontColor);
+    background: transparent;
+    max-height: 225px;
+    border: none;
+    resize: none;
+}
+
+.dateHourInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dateHourInfo h3 {
+    font-weight: 100;
+}

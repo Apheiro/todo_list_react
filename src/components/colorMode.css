@@ -1,0 +1,195 @@
+  .day-p {
+      --fontColor: #717171;
+      --buttonsTasks: #786eff80;
+      --bakcgroundColor: #d4d4d4;
+      --moduleColor: #f0f0f0;
+      --cardsColor: #ffffff;
+      --detailsColor: #776eff;
+      --degreeColor1: #ffffff;
+      --degreeColor2: #CDCAFF;
+      --fc-page-bg-color: #ffffff !important;
+      --fc-button-bg-color: #776eff !important;
+      --fc-event-bg-color: #776eff !important;
+      --fc-event-border-color: #776eff !important;
+      --fc-event-text-color: #fff !important;
+      --fc-button-hover-bg-color: #776eff80 !important;
+      --fc-button-active-bg-color: #776eff80 !important;
+      --fc-today-bg-color: #776eff45 !important;
+      --fc-list-event-hover-bg-color: #776eff45;
+      --fc-neutral-bg-color: #786eff1f !important;
+      --fc-border-color: #786eff00 !important;
+      --colorScheme: light;
+      --shadow: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.1));
+  }
+
+  .day-g {
+      --fontColor: #717171;
+      --buttonsTasks: #85d42a80;
+      --bakcgroundColor: #d4d4d4;
+      --moduleColor: #f0f0f0;
+      --cardsColor: #ffffff;
+      --detailsColor: #85d42a;
+      --degreeColor1: #ffffff;
+      --degreeColor2: #85d42a6e;
+      --fc-page-bg-color: #ffffff !important;
+      --fc-button-bg-color: #85d42a !important;
+      --fc-event-bg-color: #85d42a !important;
+      --fc-event-border-color: #85d42a !important;
+      --fc-event-text-color: #fff !important;
+      --fc-button-hover-bg-color: #85d42a80 !important;
+      --fc-button-active-bg-color: #85d42a80 !important;
+      --fc-today-bg-color: #85d42a1f !important;
+      --fc-list-event-hover-bg-color: #85d42a1f;
+      --fc-neutral-bg-color: #85d42a1f !important;
+      --fc-border-color: #786eff00 !important;
+      --colorScheme: light;
+      --shadow: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.1));
+  }
+
+  .day-o {
+      --fontColor: #717171;
+      --buttonsTasks: #fe662a80;
+      --bakcgroundColor: #d4d4d4;
+      --moduleColor: #f0f0f0;
+      --cardsColor: #ffffff;
+      --detailsColor: #fe662a;
+      --degreeColor1: #ffffff;
+      --degreeColor2: #fe662a6e;
+      --fc-page-bg-color: #ffffff !important;
+      --fc-button-bg-color: #fe662a !important;
+      --fc-event-bg-color: #fe662a !important;
+      --fc-event-border-color: #fe662a !important;
+      --fc-event-text-color: #fff !important;
+      --fc-button-hover-bg-color: #fe662a80 !important;
+      --fc-button-active-bg-color: #fe662a80 !important;
+      --fc-today-bg-color: #fe662a1f !important;
+      --fc-list-event-hover-bg-color: #fe662a1f;
+      --fc-neutral-bg-color: #fe662a1f !important;
+      --fc-border-color: #786eff00 !important;
+      --colorScheme: light;
+      --shadow: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.1));
+  }
+
+  .day-b {
+      --fontColor: #717171;
+      --buttonsTasks: #2acdff80;
+      --bakcgroundColor: #d4d4d4;
+      --moduleColor: #f0f0f0;
+      --cardsColor: #ffffff;
+      --detailsColor: #2acdff;
+      --degreeColor1: #ffffff;
+      --degreeColor2: #2acdff6e;
+      --fc-page-bg-color: #ffffff !important;
+      --fc-button-bg-color: #2acdff !important;
+      --fc-event-bg-color: #2acdff !important;
+      --fc-event-border-color: #2acdff !important;
+      --fc-event-text-color: #fff !important;
+      --fc-button-hover-bg-color: #2acdff80 !important;
+      --fc-button-active-bg-color: #2acdff80 !important;
+      --fc-today-bg-color: #2acdff1f !important;
+      --fc-list-event-hover-bg-color: #2acdff1f;
+      --fc-neutral-bg-color: #2acdff1f !important;
+      --fc-border-color: #786eff00 !important;
+      --colorScheme: light;
+      --shadow: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.1));
+  }
+
+  .night-p {
+      --fontColor: #c4bdf0;
+      --buttonsTasks: #c4bdf084;
+      --bakcgroundColor: #202329;
+      --moduleColor: #262c33;
+      --cardsColor: #2b3138;
+      --detailsColor: #776eff;
+      --degreeColor1: #323a43;
+      --degreeColor2: #343168;
+      --fc-page-bg-color: #2b3138 !important;
+      --fc-button-bg-color: #776eff !important;
+      --fc-event-bg-color: #776eff !important;
+      --fc-event-border-color: #776eff !important;
+      --fc-event-text-color: #262c33 !important;
+      --fc-button-hover-bg-color: #776eff80 !important;
+      --fc-button-active-bg-color: #776eff80 !important;
+      --fc-today-bg-color: #786eff1f !important;
+      --fc-list-event-hover-bg-color: #786eff1f;
+      --fc-neutral-bg-color: #786eff1f !important;
+      --fc-border-color: #786eff00 !important;
+      --colorScheme: dark;
+      --shadow: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.1));
+      --fc-button-text-color: #262c33 !important;
+  }
+
+  .night-g {
+      --fontColor: #d6f0bd;
+      --buttonsTasks: #daff7370;
+      --bakcgroundColor: #202329;
+      --moduleColor: #262c33;
+      --cardsColor: #2b3138;
+      --detailsColor: #daff73;
+      --degreeColor1: #323a43;
+      --degreeColor2: #daff7340;
+      --fc-page-bg-color: #2b3138 !important;
+      --fc-button-bg-color: #daff73 !important;
+      --fc-event-bg-color: #daff73 !important;
+      --fc-event-border-color: #daff73 !important;
+      --fc-event-text-color: #262c33 !important;
+      --fc-button-hover-bg-color: #daff7380 !important;
+      --fc-button-active-bg-color: #daff7380 !important;
+      --fc-today-bg-color: #daff731f !important;
+      --fc-list-event-hover-bg-color: #daff731f;
+      --fc-neutral-bg-color: #daff731f !important;
+      --fc-border-color: #afff6e00 !important;
+      --colorScheme: dark;
+      --shadow: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.1));
+      --fc-button-text-color: #262c33 !important;
+  }
+
+  .night-o {
+      --fontColor: #f0dabd;
+      --buttonsTasks: #ff9a7370;
+      --bakcgroundColor: #202329;
+      --moduleColor: #262c33;
+      --cardsColor: #2b3138;
+      --detailsColor: #ff9a73;
+      --degreeColor1: #323a43;
+      --degreeColor2: #ff9a7340;
+      --fc-page-bg-color: #2b3138 !important;
+      --fc-button-bg-color: #ff9a73 !important;
+      --fc-event-bg-color: #ff9a73 !important;
+      --fc-event-border-color: #ff9a73 !important;
+      --fc-event-text-color: #262c33 !important;
+      --fc-button-hover-bg-color: #ff9a7380 !important;
+      --fc-button-active-bg-color: #ff9a7380 !important;
+      --fc-today-bg-color: #ff9a731f !important;
+      --fc-list-event-hover-bg-color: #ff9a731f;
+      --fc-neutral-bg-color: #ff9a731f !important;
+      --fc-border-color: #786eff00 !important;
+      --colorScheme: dark;
+      --shadow: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.1));
+      --fc-button-text-color: #262c33 !important;
+  }
+
+  .night-b {
+      --fontColor: #cbf0ff;
+      --buttonsTasks: #2acdff70;
+      --bakcgroundColor: #202329;
+      --moduleColor: #262c33;
+      --cardsColor: #2b3138;
+      --detailsColor: #2acdff;
+      --degreeColor1: #323a43;
+      --degreeColor2: #2acdff40;
+      --fc-page-bg-color: #2b3138 !important;
+      --fc-button-bg-color: #2acdff !important;
+      --fc-event-bg-color: #2acdff !important;
+      --fc-event-border-color: #2acdff !important;
+      --fc-event-text-color: #262c33 !important;
+      --fc-button-hover-bg-color: #2acdff80 !important;
+      --fc-button-active-bg-color: #2acdff80 !important;
+      --fc-today-bg-color: #2acdff1f !important;
+      --fc-list-event-hover-bg-color: #2acdff1f;
+      --fc-neutral-bg-color: #2acdff1f !important;
+      --fc-border-color: #786eff00 !important;
+      --colorScheme: dark;
+      --shadow: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.1));
+      --fc-button-text-color: #262c33 !important;
+  }

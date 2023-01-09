@@ -1,0 +1,47 @@
+.taskForm {
+    max-width: 500px;
+    height: fit-content;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cardsColor);
+    border-radius: 10px;
+}
+
+.taskForm textarea {
+    resize: none;
+    overflow: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--moduleColor);
+    width: 100%;
+    color: var(--fontColor);
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.taskForm input {
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--fontColor);
+    height: 50px;
+    width: 100%;
+    background-color: var(--moduleColor);
+    padding-inline: 10px;
+}
+
+.taskForm h2 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.inputDateAndTime {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}

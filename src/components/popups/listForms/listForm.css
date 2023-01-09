@@ -1,0 +1,50 @@
+.listForm {
+    max-width: 350px;
+    max-height: 130px;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cardsColor);
+    border-radius: 10px;
+}
+
+.listForm input {
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    background-color: var(--moduleColor);
+    color: var(--fontColor);
+    padding-inline: 10px;
+    font-size: 16px;
+}
+
+.listForm h2 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.submit,
+.cancel {
+    color: var(--detailsColor);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.submit svg,
+.cancel svg {
+    height: 30px;
+    width: 30px;
+}

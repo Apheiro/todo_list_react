@@ -1,0 +1,146 @@
+.calendarContainer {
+    height: 100%;
+}
+
+.fc-popover {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    max-width: 100%;
+    max-height: calc(100% - 60px) !important;
+    top: initial !important;
+    left: initial !important;
+    overflow: hidden !important;
+}
+
+.fc-popover-body {
+    overflow-y: auto !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fc-popover .fc-event-title.fc-sticky {
+    white-space: normal;
+}
+
+.fc-popover-body a.fc-event.fc-event-start.fc-event-end.fc-event-today.fc-daygrid-event.fc-daygrid-block-event.fc-h-event {
+    margin: 0px;
+    width: fit-content;
+}
+
+.fc .fc-button-primary {
+    border: none !important;
+    color: var(--cardsColor);
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+    border-color: none;
+    color: var(--cardsColor) !important;
+}
+
+.fc .fc-button-group>.fc-button {
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.fc .fc-button-primary:focus {
+    box-shadow: none !important;
+}
+
+.fc .fc-button:focus {
+    box-shadow: none !important;
+    outline: 0;
+}
+
+.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
+    z-index: 0;
+}
+
+.fc-dayGridMonth-view table .fc-scrollgrid-section th,
+.fc-dayGridMonth-view table .fc-scrollgrid-section-body td {
+    border: none !important;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+    border: none !important;
+}
+
+.fc-dayGridMonth-view .fc-scrollgrid-sync-table {
+    min-height: 350px;
+}
+
+/* container rows of days */
+.fc-dayGridMonth-view .fc-scrollgrid-sync-table tbody {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* row of days in calendar */
+.fc-dayGridMonth-view .fc-scrollgrid-sync-table tbody tr {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+}
+
+/* days in calendar */
+.fc-dayGridMonth-view .fc-scrollgrid-sync-table tbody td {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--cardsColor);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* popup hover */
+.fc-theme-standard .fc-popover {
+    background: var(--cardsColor) !important;
+    border: none !important;
+    border-radius: 10px !important;
+}
+
+.fc-listMonth-view {
+    border: 1px solid var(--fc-border-color) !important;
+    border-radius: 10px !important;
+}
+
+.fc-timeGridWeek-view {
+    /* border: 1px solid var(--fc-border-color); */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--cardsColor);
+    padding: 10px;
+}
+
+.fc-timeGridDay-view {
+    /* border: 1px solid var(--fc-border-color); */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--cardsColor);
+    padding: 10px;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+    border: 1px solid var(--fc-border-color);
+    border-bottom: none;
+    border-right: none;
+}
+
+/* background of list section calendar */
+.fc-listMonth-view.fc-view.fc-list.fc-list-sticky {
+    background-color: var(--cardsColor);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (max-width:600px) {
+    .fc .fc-toolbar-title {
+        font-size: 13px !important;
+    }
+}

@@ -1,0 +1,156 @@
+.categoryTasks {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.taskContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-block: 5px;
+}
+
+.taskContainer:hover .moreInfoTaskBtn,
+.taskContainer:hover .delTaskBtn {
+    display: flex;
+    animation: hoverIn 0.5s forwards;
+}
+
+.moreInfoTaskBtn {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    transform: scale(0);
+    transition: transform 0.8s ease-in-out;
+    width: 0px;
+    animation: hoverOut 0.5s forwards;
+    cursor: pointer;
+}
+
+.delTaskBtn {
+    background-color: transparent;
+    color: var(--detailsColor);
+    border: none;
+    transform: scale(0);
+    transition: transform 0.8s ease-in-out;
+    width: 0px;
+    animation: hoverOut 0.5s forwards;
+    cursor: pointer;
+}
+
+.moreInfoTaskBtn svg,
+.delTaskBtn svg {
+    width: 20px;
+    height: 20px;
+    color: var(--buttonsTasks);
+}
+
+.taskTitle {
+    overflow-wrap: anywhere;
+}
+
+.inputCheckTask {
+    display: none;
+}
+
+.checkmark {
+    width: 60px;
+    height: 25px;
+    border: 2px solid var(--detailsColor);
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.checkmark p {
+    z-index: 1;
+    user-select: none;
+    color: var(--detailsColor);
+}
+
+.checkmark::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    background: var(--detailsColor);
+    transform: scale(0);
+    transition: transform 0.15s ease-in-out;
+}
+
+.inputCheckTask:checked+.checkmark::after {
+    transform: scale(1);
+}
+
+.inputCheckTask:checked+.checkmark p {
+    color: var(--cardsColor);
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+
+.category h2 {
+    font-size: 20px;
+    font-weight: 100;
+    color: var(--detailsColor);
+}
+
+.category button {
+    border: none;
+    color: var(--detailsColor);
+    background: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.category button svg {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.rotateBtn {
+    transform: rotate(180deg);
+}
+
+@keyframes hoverIn {
+    0% {
+        width: initial;
+        transform: scale(0);
+    }
+
+    100% {
+        width: initial;
+        transform: scale(1);
+    }
+}
+
+@keyframes hoverOut {
+    0% {
+        width: initial;
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(0);
+    }
+
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+}

@@ -1,0 +1,82 @@
+.colorModeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.colorModeContainer h2 {
+    font-size: 18px;
+}
+
+.colorModeBtns {
+    padding-inline: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.colorModeBtns button {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    filter: var(--shadow);
+    border-radius: 25px;
+    border: none;
+}
+
+.githubLink {
+    display: flex;
+    padding-inline: 20px;
+}
+
+.darkpBtn {
+    background: linear-gradient(135deg, #776eff 0%, #776eff 50%, #262c33 50%, #262c33 100%);
+}
+
+.darkgBtn {
+    background: linear-gradient(135deg, #daff73 0%, #daff73 50%, #262c33 50%, #262c33 100%);
+}
+
+.darkoBtn {
+    background: linear-gradient(135deg, #ff9a73 0%, #ff9a73 50%, #262c33 50%, #262c33 100%);
+}
+
+.darkbBtn {
+    background: linear-gradient(135deg, #2acdff 0%, #2acdff 50%, #262c33 50%, #262c33 100%);
+}
+
+.daypBtn {
+    background: linear-gradient(135deg, #776eff 0%, #776eff 50%, #fff 50%, #fff 100%);
+}
+
+.daygBtn {
+    background: linear-gradient(135deg, #85d42a 0%, #85d42a 50%, #fff 50%, #fff 100%);
+}
+
+.dayoBtn {
+    background: linear-gradient(135deg, #fe662a 0%, #fe662a 50%, #fff 50%, #fff 100%);
+}
+
+.daybBtn {
+    background: linear-gradient(135deg, #2acdff 0%, #2acdff 50%, #fff 50%, #fff 100%);
+}
+
+.github {
+    background-color: var(--cardsColor);
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-style: none;
+    text-decoration: none;
+    color: var(--fontColor);
+    gap: 10px;
+    filter: var(--shadow);
+}
+
+.github svg {
+    height: 25px;
+    width: 25px;
+}
