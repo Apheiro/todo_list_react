@@ -70,9 +70,9 @@ class App extends React.Component {
   componentDidMount() {
     if (Object.keys(localStorage).length !== 0) {
       if (localStorage.theme) { this.setState({ theme: localStorage.theme }) }
-      if (localStorage.lists) {
+      if (localStorage.listsReact) {
         this.setState({
-          lists: JSON.parse(localStorage.lists)
+          lists: JSON.parse(localStorage.listsReact)
         }, () => { this.changeAllTasksInfo('both') })
       }
     }
@@ -129,7 +129,7 @@ class App extends React.Component {
     }, () => {
       this.tasksCategoryOrder()
       this.changeAllTasksInfo('both')
-      localStorage.setItem('lists', JSON.stringify(this.state.lists))
+      localStorage.setItem('listsReact', JSON.stringify(this.state.lists))
     })
   }
 
@@ -313,7 +313,7 @@ class App extends React.Component {
     }, () => {
       this.changeAllTasksInfo('addRemoveTask')
       this.tasksCategoryOrder()
-      localStorage.setItem('lists', JSON.stringify(this.state.lists))
+      localStorage.setItem('listsReact', JSON.stringify(this.state.lists))
     });
     e.preventDefault()
   }
@@ -333,7 +333,7 @@ class App extends React.Component {
       lists
     }, () => {
       this.tasksCategoryOrder()
-      localStorage.setItem('lists', JSON.stringify(this.state.lists))
+      localStorage.setItem('listsReact', JSON.stringify(this.state.lists))
     })
   }
 
@@ -350,7 +350,7 @@ class App extends React.Component {
       () => {
         this.changeAllTasksInfo('both')
         this.tasksCategoryOrder()
-        localStorage.setItem('lists', JSON.stringify(this.state.lists))
+        localStorage.setItem('listsReact', JSON.stringify(this.state.lists))
       });
   }
 
@@ -369,7 +369,7 @@ class App extends React.Component {
     this.setState({ lists },
       () => {
         this.changeAllTasksInfo('checkTask')
-        localStorage.setItem('lists', JSON.stringify(this.state.lists))
+        localStorage.setItem('listsReact', JSON.stringify(this.state.lists))
       });
   }
 
@@ -394,7 +394,7 @@ class App extends React.Component {
         lists: [...this.state.lists, list],
         show: { listForm: false }
       }, () => {
-        localStorage.setItem('lists', JSON.stringify(this.state.lists))
+        localStorage.setItem('listsReact', JSON.stringify(this.state.lists))
       })
     }
   }
@@ -418,7 +418,7 @@ class App extends React.Component {
       this.setState({
         lists,
         show: { EditListForm: false }
-      }, () => { localStorage.setItem('lists', JSON.stringify(this.state.lists)) })
+      }, () => { localStorage.setItem('listsReact', JSON.stringify(this.state.lists)) })
     }
 
   }
@@ -432,7 +432,7 @@ class App extends React.Component {
     this.setState({ lists }, () => {
       this.tasksCategoryOrder()
       this.changeAllTasksInfo('both')
-      localStorage.setItem('lists', JSON.stringify(this.state.lists))
+      localStorage.setItem('listsReact', JSON.stringify(this.state.lists))
     })
   }
 
@@ -453,7 +453,7 @@ class App extends React.Component {
       this.setState({ lists }, () => {
         this.tasksCategoryOrder()
         this.changeAllTasksInfo('both')
-        localStorage.setItem('lists', JSON.stringify(this.state.lists))
+        localStorage.setItem('listsReact', JSON.stringify(this.state.lists))
       })
     }
 
