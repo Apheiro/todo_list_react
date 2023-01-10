@@ -36,6 +36,6 @@
 
 ## Screenshots
 
-![](./src/Preview/thumbnail.png)
-![](./src/Preview/Screenshots.png)
+![](./src/previewImages/thumbnail.png)
+![](./src/previewImages/Screenshots.png)
 
