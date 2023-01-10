@@ -84,6 +84,7 @@ class App extends React.Component {
         {
           name: 'Example of List!',
           id: 'testList',
+          tasksNumber: 5,
           tasksCompleted: 1,
           tasks: [
             {
@@ -304,6 +305,8 @@ class App extends React.Component {
     const lists = [...this.state.lists];
     const listIndex = lists.findIndex((list) => list.id === this.state.listSelected);
     lists[listIndex].tasks.push(task);
+    lists[listIndex].tasksNumber++
+
     this.setState({
       lists,
       show: { taskForm: false },
@@ -336,17 +339,38 @@ class App extends React.Component {
 
   deleteTask(e) {
     const lists = [...this.state.lists];
-    lists.forEach(list => list.tasks.forEach((task) =>
-      task.id === e.currentTarget.parentNode.id ? list.tasks.splice(list.tasks.indexOf(task), 1) : null)
+
+    let taskSelected;
+    const list = lists.find(list => list.tasks.includes(taskSelected = list.tasks.find(task => e.currentTarget.parentNode.id === task.id)))
+    list.tasks.splice(list.tasks.indexOf(taskSelected), 1)
+    list.tasksNumber--
+    if (taskSelected.checked) { list.tasksCompleted-- }
+
+    this.setState({ lists },
+      () => {
+        this.changeAllTasksInfo('both')
+        this.tasksCategoryOrder()
+        localStorage.setItem('lists', JSON.stringify(this.state.lists))
+      });
+  }
+
+  checkTask(e) {
+    const lists = [...this.state.lists];
+    lists.forEach((list) =>
+      list.tasks.forEach(task => { if (task.id === e.currentTarget.parentNode.parentNode.id) { task.checked = e.currentTarget.checked } })
     );
 
-    this.setState({
-      lists
-    }, () => {
-      this.changeAllTasksInfo('addRemoveTask')
-      this.tasksCategoryOrder()
-      localStorage.setItem('lists', JSON.stringify(this.state.lists))
-    });
+    const taskID = e.currentTarget.parentNode.parentNode.id
+    const list = lists.find(list => list.tasks.includes(list.tasks.find(task => taskID === task.id)))
+    let tasksChecked = 0;
+    list.tasks.forEach(task => { if (task.checked) { tasksChecked++ } })
+    list.tasksCompleted = tasksChecked
+
+    this.setState({ lists },
+      () => {
+        this.changeAllTasksInfo('checkTask')
+        localStorage.setItem('lists', JSON.stringify(this.state.lists))
+      });
   }
 
   removeAlert() {
@@ -435,25 +459,6 @@ class App extends React.Component {
 
   }
 
-  checkTask(e) {
-    const lists = [...this.state.lists];
-    let tasksCompleted = 0
-    lists.forEach((list) => {
-      list.tasks.forEach(task => {
-        if (task.id === e.currentTarget.parentNode.parentNode.id) { task.checked = e.currentTarget.checked }
-        if (task.checked) { tasksCompleted++ }
-        list.tasksCompleted = tasksCompleted
-      }
-      );
-    });
-
-    this.setState({
-      lists
-    }, () => {
-      this.changeAllTasksInfo('checkTask')
-      localStorage.setItem('lists', JSON.stringify(this.state.lists))
-    });
-  }
 
   showTaskInfo(e) {
     this.setState({

@@ -85,7 +85,7 @@ class ListsMenus extends React.Component {
                                         >
                                             <h2>{list.name}</h2>
                                             <div className="tasksCount">
-                                                <p>{list.tasks.length} Tasks</p>
+                                                <p>{list.tasksNumber} Tasks</p>
                                                 <p className="taskCountCompleted">{list.tasksCompleted} Completed</p>
                                             </div>
                                             {
