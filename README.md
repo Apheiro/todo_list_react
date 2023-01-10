@@ -2,7 +2,7 @@
 
 <h1 align="center">Todo list React Version</h1>
 
-![](./src/Preview/Thumbnail3D.png)
+![](./src/previewImages/Thumbnail3D.png)
 
 <p align="center">
   Todo list for <a href="https://www.theodinproject.com/">The Odin Project</a></br>
