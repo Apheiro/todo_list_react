@@ -44,6 +44,8 @@ class ListsMenus extends React.Component {
 
     render() {
         const { showForm, lists, selectList, listSelected, deleteList, allTasks, optionSelectedFn, optionSelected, showSidebarState, showSidebar } = this.props
+        const showOptionHover = this.state.showOptions.hover
+        const showOptionList = this.state.showOptions.list
         return (
             <div className={`listsMenus containerStyle ${showSidebarState ? 'show' : ''}`}>
                 <h2 className="titleListSection">My Lists</h2>
@@ -67,30 +69,27 @@ class ListsMenus extends React.Component {
                         <AnimatePresence>
                             {
                                 lists.map((list) => {
-                                    let tasksCompleted = 0;
-                                    list.tasks.forEach((task) => { if (task.checked) { tasksCompleted++ } })
                                     return (
                                         <motion.div key={list.id} id={list.id} className={`list ${listSelected === list.id ? "activeList" : ''}`} onMouseEnter={this.showListOptions} onMouseLeave={this.hiddeListOptions} onClick={selectList}
                                             initial={{ scale: 1.1, opacity: 0 }}
-                                            animate={{ scale: 1, opacity: 1, height: this.state.showOptions.hover && this.state.showOptions.list === list.id ? 150 : 92, transition: { duration: 0.25 } }}
+                                            animate={{ scale: 1, opacity: 1, height: showOptionHover && showOptionList === list.id ? 150 : 92, transition: { duration: 0.25 } }}
                                             exit={{
                                                 scale: [1, 1.2, 1],
-                                                height: [this.state.showOptions.hover && this.state.showOptions.list === list.id ? 150 : 92, this.state.showOptions.hover && this.state.showOptions.list === list.id ? 150 : 92, 0,],
+                                                height: [showOptionHover && showOptionList === list.id ? 150 : 92, showOptionHover && showOptionList === list.id ? 150 : 92, 0,],
                                                 opacity: [1, 0, 0,],
                                                 padding: [20, 20, 0],
                                                 margin: [5, 5, 0],
                                                 transition: { duration: 0.8 }
                                             }}
                                             transition={{ duration: 0.25 }}
-                                        // animate={{ height: 150, maxHeight: this.state.showOptions.hover && this.state.showOptions.list === list.id ? 150 : 92 }}
                                         >
                                             <h2>{list.name}</h2>
                                             <div className="tasksCount">
                                                 <p>{list.tasks.length} Tasks</p>
-                                                <p className="taskCountCompleted">{tasksCompleted} Completed</p>
+                                                <p className="taskCountCompleted">{list.tasksCompleted} Completed</p>
                                             </div>
                                             {
-                                                this.state.showOptions.hover && this.state.showOptions.list === list.id ?
+                                                showOptionHover && showOptionList === list.id ?
                                                     <motion.div className="listOptionBtns"
                                                         animate={{ scale: 1, opacity: 1 }}
                                                         initial={{ scale: 1.1, opacity: 0 }}

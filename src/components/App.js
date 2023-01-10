@@ -84,6 +84,7 @@ class App extends React.Component {
         {
           name: 'Example of List!',
           id: 'testList',
+          tasksCompleted: 1,
           tasks: [
             {
               name: 'Create your first list of tasks! Click to see more ------>',
@@ -436,11 +437,16 @@ class App extends React.Component {
 
   checkTask(e) {
     const lists = [...this.state.lists];
+    let tasksCompleted = 0
     lists.forEach((list) => {
-      list.tasks.forEach(task =>
-        task.id === e.currentTarget.parentNode.parentNode.id ? task.checked = e.currentTarget.checked : null
+      list.tasks.forEach(task => {
+        if (task.id === e.currentTarget.parentNode.parentNode.id) { task.checked = e.currentTarget.checked }
+        if (task.checked) { tasksCompleted++ }
+        list.tasksCompleted = tasksCompleted
+      }
       );
     });
+
     this.setState({
       lists
     }, () => {

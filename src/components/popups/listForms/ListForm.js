@@ -13,6 +13,7 @@ class ListForm extends React.Component {
         this.list = {
             name: '',
             id: '',
+            tasksCompleted: 0,
             tasks: []
         }
     }
