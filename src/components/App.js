@@ -69,7 +69,7 @@ class App extends React.Component {
 
   componentDidMount() {
     if (Object.keys(localStorage).length !== 0) {
-      if (localStorage.theme) { this.setState({ theme: localStorage.theme }) }
+      if (localStorage.themeReact) { this.setState({ theme: localStorage.themeReact }) }
       if (localStorage.listsReact) {
         this.setState({
           lists: JSON.parse(localStorage.listsReact)
@@ -136,7 +136,7 @@ class App extends React.Component {
   changeTheme(e) {
     this.setState({
       theme: e.currentTarget.id
-    }, () => localStorage.setItem('theme', this.state.theme))
+    }, () => localStorage.setItem('themeReact  ', this.state.theme))
   }
 
   showSidebar() {

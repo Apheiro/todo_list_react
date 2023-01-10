@@ -7,27 +7,6 @@
   transition: color 0.20s, background-color 0.3s ease-in-out;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
-  --fontColor: #717171;
-  --buttonsTasks: #786eff80;
-  --bakcgroundColor: #d4d4d4;
-  --moduleColor: #f0f0f0;
-  --cardsColor: #ffffff;
-  --detailsColor: #776eff;
-  --degreeColor1: #ffffff;
-  --degreeColor2: #CDCAFF;
-  --fc-page-bg-color: #ffffff !important;
-  --fc-button-bg-color: #776eff !important;
-  --fc-event-bg-color: #776eff !important;
-  --fc-event-border-color: #776eff !important;
-  --fc-event-text-color: #fff !important;
-  --fc-button-hover-bg-color: #776eff80 !important;
-  --fc-button-active-bg-color: #776eff80 !important;
-  --fc-today-bg-color: #776eff45 !important;
-  --fc-list-event-hover-bg-color: #776eff45;
-  --fc-neutral-bg-color: #786eff1f !important;
-  --fc-border-color: #786eff00 !important;
-  --colorScheme: light;
-  --shadow: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 /* width */
