@@ -136,7 +136,7 @@ class App extends React.Component {
   changeTheme(e) {
     this.setState({
       theme: e.currentTarget.id
-    }, () => localStorage.setItem('themeReact  ', this.state.theme))
+    }, () => localStorage.setItem('themeReact', this.state.theme))
   }
 
   showSidebar() {
